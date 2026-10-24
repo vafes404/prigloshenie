@@ -333,28 +333,26 @@ body {
 <!-- ===== МЕСТО + КАРТА ===== -->
 <section class="section location">
   <h2 class="section__title">Место проведения</h2>
-  <p class="location__address">Эльгера 20</p>
-  <p class="location__time">Сбор гостей — <strong>14:00</strong></p>
+  <p class="location__address">Московский проспект 38 к.3</p>
+  <p class="location__time">Сбор гостей — <strong>16:00</strong></p>
 
-  <!-- 📍 ЯНДЕКС КАРТА С МЕТКОЙ -->
+  <!-- 📍 ЯНДЕКС КАРТА С МЕТКОЙ (координаты для Московский пр-т 38к3) -->
   <div class="map">
     <iframe
-      src="https://yandex.ru/map-widget/v1/?ll=47.178700%2C56.144700&z=17&pt=47.178700,56.144700,pm2rdm"
+      src="https://yandex.ru/map-widget/v1/?ll=47.215102%2C56.146003&z=17&pt=47.215102,56.146003,pm2rdm"
       width="100%" height="360" frameborder="0"
       allowfullscreen="true" loading="lazy"
-      title="Карта — Эльгера 20, Чебоксары">
+      title="Карта — Московский проспект 38 к.3, Чебоксары">
     </iframe>
   </div>
 </section>
 
 <!-- ===== ПРОГРАММА ===== -->
 <section class="section program">
-  <h2 class="section__title">Программа дня</h2>
+  <h2 class="section__title">Тайминг</h2>
   <ul class="program__list">
-    <li class="program__item"><span class="program__time">14:00</span><span class="program__desc">Сбор гостей</span></li>
-    <li class="program__item"><span class="program__time">15:00</span><span class="program__desc">Церемония</span></li>
-    <li class="program__item"><span class="program__time">21:30</span><span class="program__desc">Праздничный ужин</span></li>
-    <li class="program__item"><span class="program__time">23:00</span><span class="program__desc">Завершение вечера</span></li>
+    <li class="program__item"><span class="program__time">16:00</span><span class="program__desc">Начало банкета</span></li>
+    <li class="program__item"><span class="program__time">21:00</span><span class="program__desc">Конец банкета</span></li>
   </ul>
 </section>
 
@@ -403,7 +401,7 @@ body {
 
 <script>
 /* ===== ОБРАТНЫЙ ОТСЧЁТ ===== */
-const weddingDate = new Date('2026-10-31T14:00:00');
+const weddingDate = new Date('2026-10-31T16:00:00');
 
 function updateCountdown() {
   const diff = weddingDate - new Date();
